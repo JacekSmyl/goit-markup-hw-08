@@ -1,0 +1,18 @@
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:hover,
+:focus {
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+body {
+  font-family: "Roboto", "Raleway", sans-serif;
+}
+
+input:hover,
+input:focus-visible {
+  outline: none;
+  border: 1px solid rgba(33, 150, 243, 1);
+}

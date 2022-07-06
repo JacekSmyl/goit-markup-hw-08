@@ -1,0 +1,38 @@
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.header {
+  border-bottom: 1px solid #ececec;
+  height: 80px;
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container--footer {
+  display: flex;
+}
+.container-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.container-footer-form {
+  padding-left: 78px;
+}
+.container-footer--item {
+  margin-left: 70px;
+}
+.background-image {
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/overlay.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  max-width: 1600px;
+  margin: 0 auto;
+}

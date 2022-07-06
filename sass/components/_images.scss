@@ -1,0 +1,27 @@
+.images {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 0px;
+}
+.images__label {
+  position: relative;
+}
+.images__label-text {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 370px;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+  margin: 0px;
+  top: 224px;
+  text-align: center;
+  padding-top: 27px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #ffffff;
+}

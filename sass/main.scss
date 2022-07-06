@@ -1,0 +1,54 @@
+//visually-hidden
+@import "./utils/visually-hidden";
+
+//base
+@import "./utils/variables";
+@import "./base/common";
+@import "./base/section";
+@import "./base/container";
+@import "./components/backdrop";
+//logo
+
+@import "./components/logo";
+
+//Headings
+
+@import "./components/headings";
+
+// Header
+
+@import "./layout/_header";
+
+//Navi
+
+@import "./layout/navi";
+
+// Hero
+
+@import "./layout/hero";
+
+//Main
+
+@import "./components/list-icon";
+@import "./components/images";
+@import "./components/team";
+@import "./components/customers";
+
+//Social
+
+@import "./components/team-social__icon";
+
+//Modal
+@import "./components/modal-btn";
+@import "./components/modal-form";
+@import "./components/modal";
+
+//Footer
+@import "./layout/footer";
+@import "./components/footer-form";
+
+//Portfolio
+@import "./components/buttons";
+@import "./components/portfolio";
+@import "./components/portfolio-overlay";
+@import "./components/description";

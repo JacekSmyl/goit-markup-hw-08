@@ -1,0 +1,28 @@
+.list-icon {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 94px;
+  padding-top: 94px;
+  padding-left: 0px;
+}
+.list-icon--box {
+  box-sizing: border-box;
+}
+.list-icon__text {
+  font-size: 14px;
+  line-height: 1.714;
+  color: #757575;
+  width: 270px;
+}
+
+.list-icon__background {
+  background: var(--grey);
+  border-radius: 4px;
+  width: 270px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,37 @@
+/* main stat */
+
+.hero {
+  color: #ffffff;
+  height: 600px;
+  text-align: center;
+  padding-bottom: 94px;
+
+}
+
+.hero__label {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  width: 696px;
+  padding-top: 200px;
+  border: 0px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.hero__button {
+  margin-top: 30px;
+  line-height: 1.875;
+  background-color: rgba(33, 150, 243, 1);
+  color: rgba(255, 255, 255, 1);
+  border-radius: 4px;
+  font-weight: 700;
+  padding: 10px 41px;
+  border: 0px;
+  
+&:hover {
+  cursor: pointer;
+}
+}

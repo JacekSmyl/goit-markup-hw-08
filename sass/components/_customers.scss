@@ -1,0 +1,40 @@
+/* Customers */
+.customers {
+  list-style: none;
+  padding: 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.customers__list {
+  box-sizing: border-box;
+  border: 1px solid var(--social-color);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  align-items: center;
+  
+&:hover svg {
+  cursor: pointer;
+  fill:var(--blue);
+}
+&:hover {
+  border: 1px solid var(--blue);
+  border-radius: 4px;
+  cursor: pointer;
+}}
+.customers__icons {
+  display: flex;
+  fill: var( --social-color);
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-property: fill;
+}
+.customers__logo {
+  display: flex;
+  fill: var( --social-color);
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-property: fill;
+}
