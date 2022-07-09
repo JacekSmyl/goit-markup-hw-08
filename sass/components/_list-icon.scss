@@ -1,11 +1,91 @@
+
+
+// mobile //
+@media screen and (max-width: 767px) {
 .list-icon {
   display: flex;
+  flex-direction: column;
   list-style: none;
   justify-content: space-between;
+  align-items: center;
+  padding-top: 80px;
+  padding-left: 0px;
+  margin: 0px;
+}
+
+.list-icon__background {
+  background: var(--grey);
+  border-radius: 4px;
+  width: 450px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 ;
+  
+}
+.list-icon__text {
+  font-size: 14px;
+  line-height: 1.714;
+  color: #757575;
+ height: 120px;
+line-height: 1.5;
+font-size: 14px;
+letter-spacing: .03em;
+display: flex;
+justify-content: center;
+  
+}
+.list-icon__text {
+  font-size: 14px;
+  line-height: 1.714;
+  color: #757575;
+max-width: 450px;
+}
+}
+
+
+
+
+
+
+.list-icon--box {
+  box-sizing: border-box;
+}
+
+
+//Tablet//
+
+@media screen and (min-width:768px) and (max-width: 1199px) {
+.list-icon {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: space-evenly;
   align-items: center;
   padding-bottom: 94px;
   padding-top: 94px;
   padding-left: 0px;
+  max-width: 768px;
+  margin: 0px;
+
+}
+.list-icon__text {
+  font-size: 14px;
+  line-height: 1.714;
+  color: #757575;
+
+}
+.list-icon__background {
+  background: var(--grey);
+  border-radius: 4px;
+  width: 354px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 .list-icon--box {
   box-sizing: border-box;
@@ -16,6 +96,13 @@
   color: #757575;
   width: 270px;
 }
+}
+
+
+
+
+//desktop//
+@media screen and (min-width: 1200px) {
 
 .list-icon__background {
   background: var(--grey);
@@ -25,4 +112,26 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.list-icon {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 94px;
+  padding-top: 94px;
+  padding-left: 0px;
+}
+.list-icon__text {
+  font-size: 14px;
+  line-height: 1.714;
+  color: #757575;
+  width: 270px;
+}
+.list-icon__text {
+  font-size: 14px;
+  line-height: 1.714;
+  color: #757575;
+  width: 270px;
+}
 }

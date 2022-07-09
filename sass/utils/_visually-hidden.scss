@@ -3,3 +3,18 @@
   visibility: hidden;
   pointer-events: none;
 }
+@media screen and (max-width: 767px) {
+  .menu, .menu-icons_link{
+   display: none } }
+
+   
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+.mobile-navigation {
+  display: none;
+}
+}
+
+@media screen and (min-width: 1200px) {
+    .mobile-navigation {
+        display: none;
+    }}
