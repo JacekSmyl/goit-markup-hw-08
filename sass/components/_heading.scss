@@ -16,9 +16,6 @@
 
 @media screen and (min-width:768px) and (max-width: 1199px) {
   .list-icon__heading {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -27,7 +24,7 @@
 }
 }
 
-//desktop//
+//Desktop//
 @media screen and (min-width: 1200px) {
 .list-icon__heading{
   font-weight: 700;

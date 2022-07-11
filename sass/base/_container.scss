@@ -4,24 +4,11 @@
   align-items: center;
 }
 
-@media screen and (max-width: 767px) {
-  .container {
-    max-width: 100%;
-    margin: 0 auto;
-  }
-}
 
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-    margin: 0 auto;
-  }
-}
+
+
 @media screen and (min-width: 1200px) {
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
+  
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px) and (max-width: 767px),
@@ -35,8 +22,16 @@
       url("../images/hero/hero-bg-mobile-2x.jpg");
   }
 }
-//mobile//
+
+
+
+//Mobile//
 @media screen  and (max-width: 767px) {
+  .container {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
   .background-image {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
@@ -50,8 +45,20 @@
     margin: 0 auto;
   }
 }
-//tablet//
+
+
+
+
+
+
+//Tablet//
+
+
 @media screen and(min-width:768px) and (max-width: 1199px) {
+  .container {
+    max-width: 768px;
+    margin: 0 auto;
+  }
   .background-image {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
@@ -67,8 +74,13 @@
 }
 
 
-//desktop//
+//Desktop//
 @media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
   .background-image {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
@@ -83,10 +95,6 @@
   }
 }
 
-.container {
-  width: 1200px;
-  margin: 0 auto;
-}
 .header {
   border-bottom: 1px solid #ececec;
   height: 80px;
