@@ -80,7 +80,8 @@ cursor: pointer;
   color: var(--text-color);
   text-decoration: none;
   cursor: pointer;
-  padding-left: 2px;
+ 
+  padding: 5px;
 
   &:hover,
   &:hover svg {
@@ -150,7 +151,7 @@ cursor: pointer;
 }
 .menu-icons_link {
   color: var(--text-color);
-  margin-left: 5px;
+  padding: 5px;
   text-decoration: none;
   cursor: pointer;
 

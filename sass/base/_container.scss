@@ -47,6 +47,11 @@
   .container-footer-form {
     padding-bottom: 60px;
   }
+  .header {
+    border-bottom: 1px solid #ececec;
+    height: 80px;
+ 
+   }
 }
 
 //Tablet//
@@ -82,6 +87,14 @@
   .container-footer-form {
     padding-bottom: 60px;
   }
+  .header {
+    border-bottom: 1px solid #ececec;
+    height: 80px;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+   }
 }
 
 //Desktop//
@@ -99,7 +112,7 @@
       url("../images/overlay.jpg");
     background-repeat: no-repeat;
     background-position: center top;
-    background-size: contain;
+    background-size: cover;
     max-width: 1600px;
     margin: 0 auto;
   }
