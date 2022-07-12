@@ -4,13 +4,6 @@
   align-items: center;
 }
 
-
-
-
-@media screen and (min-width: 1200px) {
-  
-}
-
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px) and (max-width: 767px),
   screen and (min-resolution: 192dpi) and (min-width: 320px) and (max-width: 767),
   screen and (min-resolution: 2dppx) and (min-width: 320px) and (max-width: 767px) {
@@ -23,10 +16,8 @@
   }
 }
 
-
-
 //Mobile//
-@media screen  and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .container {
     max-width: 100%;
     margin: 0 auto;
@@ -44,17 +35,23 @@
     max-width: 1600px;
     margin: 0 auto;
   }
+  .container--footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .container-footer {
+    margin-top: 60px;
+  }
+
+  .container-footer-form {
+    padding-bottom: 60px;
+  }
 }
-
-
-
-
-
 
 //Tablet//
 
-
-@media screen and(min-width:768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .container {
     max-width: 768px;
     margin: 0 auto;
@@ -71,8 +68,21 @@
     max-width: 1600px;
     margin: 0 auto;
   }
-}
+  .container--footer {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .container-footer {
+    margin-top: 60px;
+  }
 
+  .container-footer-form {
+    padding-bottom: 60px;
+  }
+}
 
 //Desktop//
 @media screen and (min-width: 1200px) {
@@ -93,40 +103,29 @@
     max-width: 1600px;
     margin: 0 auto;
   }
-}
 
-.header {
-  border-bottom: 1px solid #ececec;
-  height: 80px;
-  display: flex;
-  list-style: none;
-  justify-content: space-between;
-  align-items: center;
-}
+  .header {
+    border-bottom: 1px solid #ececec;
+    height: 80px;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-.container--footer {
-  display: flex;
-}
-.container-footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
+  .container--footer {
+    display: flex;
+  }
+  .container-footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 
-.container-footer-form {
-  padding-left: 78px;
+  .container-footer-form {
+    padding-left: 78px;
+  }
+  .container-footer--item {
+    margin-left: 70px;
+  }
+  
 }
-.container-footer--item {
-  margin-left: 70px;
-}
-.background-image {
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url("../images/overlay.jpg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  max-width: 1600px;
-  margin: 0 auto;
-}
-

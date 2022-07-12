@@ -11,6 +11,14 @@ body {
   font-family: "Roboto", "Raleway", sans-serif;
 }
 
+a {
+  text-decoration: none;
+  cursor: pointer;
+  
+}
+ul {
+  list-style-type: none;
+}
 input:hover,
 input:focus-visible {
   outline: none;
