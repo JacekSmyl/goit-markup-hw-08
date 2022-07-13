@@ -16,12 +16,13 @@
 .list-icon__background {
   background: var(--grey);
   border-radius: 4px;
-  width: 450px;
+ max-width: 450px;
   height: 120px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 ;
+  
   
 }
 .list-icon__text {
@@ -42,18 +43,14 @@ justify-content: center;
   color: #757575;
 max-width: 450px;
 }
-}
-
-
-
-
 
 
 .list-icon--box {
   box-sizing: border-box;
+  margin-left: 15px;
+  margin-right: 15px;
 }
-
-
+}
 //Tablet//
 
 @media screen and (min-width:768px) and (max-width: 1199px) {

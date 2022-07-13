@@ -1,3 +1,6 @@
+
+//all//
+
 .section {
   margin-bottom: 94px;
 }
@@ -11,29 +14,4 @@
 }
 .section-heading--team {
   padding-top: 94px;
-}
-
-//Mobile//
-@media screen  and (max-width: 767px) {
-
-}
-
-
-//Tablet//
-
-@media screen and(min-width:768px) and (max-width: 1199px) {
-
-}
-
-
-//Desktop//
-@media screen and (min-width: 1200px){
-.section-heading{
-  text-align: center;
-  padding-bottom: 50px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.6;
-
-}
 }

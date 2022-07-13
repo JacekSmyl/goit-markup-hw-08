@@ -2,11 +2,7 @@
 
 /* buttons */
 
-
-
-
 //Mobile//
-@media screen and (max-width: 767px) {
 
 .buttons {
   display: flex;
@@ -43,92 +39,19 @@
   }
 }
 
-}
-
-
 //Tablet//
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-.buttons {
-  display: flex;
-  list-style: none;
-  justify-content: center;
-  align-content: flex-start;
-  margin-top: 60px;
-  margin-bottom: 50px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.625;
-  padding-left: 0px;
-  min-width: 768;
-}
-.buttons__list {
-  padding: 6px 22px;
-  border-style: none;
-  border-radius: 4px;
-  background: var(--grey);
-  font-family: "Roboto";
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 26px;
-  margin-left: 8px;
-  transition: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
-  transition-property: color, background-color;
- 
-
-  &:focus,
-  &:hover {
-    background-color: var(--blue);
-    color: #ffffff;
-    cursor: pointer;
+  .buttons {
+    justify-content: center;
   }
+  
 }
-
-
-}
-
-
-
-
 
 //Desktop//
 @media screen and (min-width: 1200px) {
-.buttons {
-  display: flex;
-  list-style: none;
-  justify-content: center;
-  align-content: flex-start;
-  margin-top: 60px;
-  margin-bottom: 50px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.625;
-  padding-left: 0px;
-}
-
-.buttons__list {
-  padding: 6px 22px;
-  border-style: none;
-  border-radius: 4px;
-  background: var(--grey);
-  font-family: "Roboto";
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 26px;
-  margin-left: 8px;
-  transition: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
-  transition-property: color, background-color;
-
-  &:focus,
-  &:hover {
-    background-color: var(--blue);
-    color: #ffffff;
-    cursor: pointer;
+  .buttons {
+    justify-content: center;
   }
-}
 
-
-
-}
+  }
