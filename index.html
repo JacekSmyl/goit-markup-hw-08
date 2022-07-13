@@ -138,8 +138,12 @@
           <ul class="images">
             <li class="images__label">
               <img
-                src="images/pc.jpg"
-                alt=" ktoś pisze na klawiaturze komutera"
+                src="./images/pc.jpg"
+                srcset="
+                ./images/pc.jpg   370w,
+                ./images/2x/laptop2x.png   740w
+                "
+                alt="Ktoś pisze na klawiaturze"
                 width="370"
                 height="294"
               />
@@ -147,8 +151,12 @@
             </li>
             <li class="images__label">
               <img
-                src="images/phone.jpg"
-                alt="telefon trzymany w ręce na tle laptopa "
+                src="./images/phone.jpg"
+                srcset="
+                ./images/phone.jpg  370w,
+                ./images/2x/phone2x.png 740w
+                "
+                alt="Telefon w ręce  "
                 width="370"
                 height="294"
               />
@@ -157,6 +165,10 @@
             <li class="images__label">
               <img
                 src="images/tablet.jpg"
+                srcset="
+                ./images/tablet.jpg   370w,
+                ./images/2x/tablet2x.png  740w
+                "
                 alt="Ktoś trzyma tablet na tale laptopa"
                 width="370"
                 height="294"
@@ -175,10 +187,18 @@
           <ul class=" container  team__members ">
             <li class="team__box">
               <img
-                src="images/man1.jpg"
-                alt="Jakiś mężczyzna na zdjęciu"
-                width="270"
-                height="260"
+                src="../images/employee1/employee1-mobile.png"
+                srcset=" 
+                images/employee1/employee1-mobile.png     450w,
+                images/employee1/employee1-mobile@2x.png   900w,
+                images/employee1/employee1-tablet.png      354w,
+                images/employee1/employee1-tablet@2x.png    708w,
+                images/employee1/employee1-desktop.png      270w"
+                sizes="(min-width: 1200px) 270px,
+                        (min-width: 768px) calc(50vw - 30px),
+                        (min-width: 320px) calc(100vw - 30px)"
+                alt="Pracownik "
+                
               />
               <h3 class="team__name ">John Doe</h3>
               <p class="team__position ">Product Designer</p>

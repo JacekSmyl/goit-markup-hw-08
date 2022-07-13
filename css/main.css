@@ -97,7 +97,7 @@ input:focus-visible {
 }
 
 .background-image {
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-bg-tablet.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-bg-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -121,6 +121,9 @@ input:focus-visible {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+  .background-image {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-bg-tablet.jpg");
+  }
   .container {
     max-width: 768px;
   }
@@ -140,6 +143,9 @@ input:focus-visible {
   }
 }
 @media screen and (min-width: 1200px) {
+  .background-image {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/overlay.jpg");
+  }
   .container {
     max-width: 1200px;
   }
@@ -166,9 +172,14 @@ input:focus-visible {
     margin-left: 70px;
   }
 }
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px) and (max-width: 767px), screen and (min-resolution: 192dpi) and (min-width: 320px) and (max-width: 767), screen and (min-resolution: 2dppx) and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .background-image {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-bg-mobile-2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-bg-mobile-2x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (min-width: 768px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
+  .background-image {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-bg-tablet@2x.jpg);
   }
 }
 .backdrop {
@@ -703,7 +714,6 @@ input:focus-visible {
   border-radius: 0px 0px 4px 4px;
   background: #ffffff;
   box-sizing: content-box;
-  width: 270px;
   text-align: center;
   margin-bottom: 30px;
 }
