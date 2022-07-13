@@ -1,10 +1,12 @@
-/* signup */
+/* Footer signup */
+//Mobile//
 
-  .footer-form{
-    display: flex;
-    flex-direction: column;
-    max-width: 460px;
-  }
+.footer-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 460px;
+}
+
 .footer-form_input {
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -16,11 +18,12 @@
   padding: 16px;
   margin-bottom: 20px;
 
- &::placeholder {
-  font-size: 16px;
-  line-height: 1.25;
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+  }
 }
-}
+
 .footer-form__button {
   width: 200px;
   height: 50px;
@@ -28,11 +31,12 @@
   border-radius: 4px;
   align-items: center;
   border: none;
-  background-color:var(--blue);
+  background-color: var(--blue);
   position: relative;
- 
+
   &:hover {
-  cursor: pointer;}
+    cursor: pointer;
+  }
 }
 
 .footer-form__signup {
@@ -53,138 +57,25 @@
   top: 12px;
   position: absolute;
 
-&:hover {
-  cursor: pointer;}
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 //Tablet//
 
-
-@media screen and (min-width:768px) and (max-width: 1199px) {
-  .footer-form{
-    display: flex;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-form {
     flex-direction: column;
     max-width: 460px;
   }
-.footer-form_input {
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-  width: 358px;
-  height: 50px;
-  background-color: transparent;
-  color: rgba(255, 255, 255, 0.6);
-  padding: 16px;
-  margin-bottom: 20px;
-
- &::placeholder {
-  font-size: 16px;
-  line-height: 1.25;
 }
-}
-.footer-form__button {
-  width: 200px;
-  height: 50px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  align-items: center;
-  border: none;
-  background-color:var(--blue);
-  position: relative;
- 
-  &:hover {
-  cursor: pointer;}
-}
-
-.footer-form__signup {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: #fff;
-  padding-right: 20px;
-}
-
-.footer-form__button svg {
-  fill: #fff;
-  width: 24px;
-  height: 24px;
-  right: 32px;
-  top: 12px;
-  position: absolute;
-
-&:hover {
-  cursor: pointer;}
-}
-
-}
-
-
 
 //Desktop//
 
-
 @media screen and (min-width: 1200px) {
-.footer-form_input {
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-  width: 358px;
-  height: 50px;
-  background-color: transparent;
-  color: rgba(255, 255, 255, 0.6);
-  padding: 16px;
-  margin-right: 12px;
-
- &::placeholder {
-  font-size: 16px;
-  line-height: 1.25;
-}
-}
-
-.footer-form__button {
-  width: 200px;
-  height: 50px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  align-items: center;
-  border: none;
-  background-color:var(--blue);
-  position: relative;
-  
-  &:hover {
-  cursor: pointer;}
-}
-
-.footer-form__signup {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: #fff;
-  padding-right: 20px;
-}
-
-.footer-form__button svg {
-  fill: #fff;
-  width: 24px;
-  height: 24px;
-  right: 32px;
-  top: 12px;
-  position: absolute;
-
-&:hover {
-  cursor: pointer;}
-}
-.footer-form{
-    display: flex;
+  .footer-form {
     flex-direction: row;
     max-width: 590px;
-   
   }
-
-
 }
-

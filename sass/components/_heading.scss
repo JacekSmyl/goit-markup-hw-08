@@ -1,45 +1,29 @@
-// mobile //
-@media screen and (max-width: 767px) {
-  .list-icon__heading {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    color: var(--text-black);
-  }
+//Heddings/
+
+// Mobile //
+
+.list-icon__heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--text-black);
 }
 
 //Tablet//
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .list-icon__heading {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    color: var(--text-black);
+    justify-content: flex-start;
   }
 }
 
 //Desktop//
 @media screen and (min-width: 1200px) {
   .list-icon__heading {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    color: var(--text-black);
+    justify-content: flex-start;
     width: 270px;
   }
-}
-
-.footer__heading {
-  color: #ffffff;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 16px;
-  margin: 0 auto;
-  padding-bottom: 20px;
-  padding-top: 10px;
-  text-transform: uppercase;
 }

@@ -1,11 +1,10 @@
+//*Hero*//
 
-
+//All Styles//
 .hero {
   color: #ffffff;
- 
   text-align: center;
   padding-bottom: px;
-
 }
 
 .hero__button {
@@ -17,27 +16,11 @@
   font-weight: 700;
   padding: 10px 41px;
   border: 0px;
-  
-&:hover {
-  cursor: pointer;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
-}
-
-
-
-
-
-/* main stat */
-
-/*.hero {
-  color: #ffffff;
-  height: 600px;
-  text-align: center;
-  padding-bottom: px;
-
-}*/
-
-
 
 .hero__button {
   margin-top: 30px;
@@ -48,8 +31,8 @@
   font-weight: 700;
   padding: 10px 41px;
   border: 0px;
-  
-&:hover {
-  cursor: pointer;
-}
+
+  &:hover {
+    cursor: pointer;
+  }
 }

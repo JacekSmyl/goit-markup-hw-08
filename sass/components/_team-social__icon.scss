@@ -1,4 +1,5 @@
-.team-social__icon{
+//All Styles//
+.team-social__icon {
   display: inline-flex;
   fill: var(--social-color);
   width: 44px;
@@ -6,13 +7,14 @@
   align-items: center;
   justify-content: center;
 
-&:hover{
-  background:var(--blue);
-  border-radius: 50%;
-  fill: white;
-  cursor: pointer;}
+  &:hover {
+    background: var(--blue);
+    border-radius: 50%;
+    fill: white;
+    cursor: pointer;
+  }
 }
-.team-social__icon-size{  
+.team-social__icon-size {
   width: 20px;
   height: 20px;
   transition: cubic-bezier(0.4, 0, 0.2, 1);

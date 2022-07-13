@@ -1,5 +1,5 @@
 //Footer
-
+//All Styles//
 .footer {
   background: var(--black);
   display: flex;
@@ -21,7 +21,16 @@
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
 }
-
+.footer__heading {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  text-transform: uppercase;
+}
 .footer__social {
   display: inline-flex;
   fill: white;

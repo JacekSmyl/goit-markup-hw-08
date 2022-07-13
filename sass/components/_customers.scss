@@ -1,6 +1,7 @@
+//Customers list//
+
 //Mobile//
 
-/* Customers */
 .customers {
   padding: 0px;
   list-style: none;
@@ -12,6 +13,7 @@
   min-width: 480px;
   max-width: 700px;
 }
+
 .customers__list {
   box-sizing: border-box;
   border: 1px solid var(--social-color);
@@ -54,14 +56,12 @@
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .customers {
     min-width: 768px;
-
   }
 }
 
 //Desktop//
 
 @media screen and (min-width: 1200px) {
-  
   .customers {
     justify-content: space-between;
     min-width: 1200px;
@@ -71,5 +71,4 @@
     width: 170px;
     margin: 0px;
   }
-
 }

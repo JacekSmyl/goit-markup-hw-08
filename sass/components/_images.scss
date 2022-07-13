@@ -1,3 +1,5 @@
+//Images//
+//All Styles//
 .images {
   display: flex;
   list-style: none;
@@ -5,9 +7,11 @@
   align-items: center;
   padding-left: 0px;
 }
+
 .images__label {
   position: relative;
 }
+
 .images__label-text {
   position: absolute;
   top: 0;

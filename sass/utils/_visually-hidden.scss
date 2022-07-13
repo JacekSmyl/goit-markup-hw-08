@@ -4,30 +4,32 @@
   pointer-events: none;
 }
 @media screen and (max-width: 767px) {
-  .menu, .menu-icons_link{
-   display: none }
-  .images-hidden{
+  .menu,
+  .menu-icons_link {
     display: none;
   }
+  .images-hidden {
+    display: none;
   }
+}
 
-   
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-.mobile-navigation {
-  display: none;
-}
-.images-hidden{
+  .mobile-navigation {
     display: none;
-}
-.hamburger{
-   display: none;
-   }
   }
+  .images-hidden {
+    display: none;
+  }
+  .hamburger {
+    display: none;
+  }
+}
 
 @media screen and (min-width: 1200px) {
-    .mobile-navigation {
-        display: none;
-    }
-    .hamburger{
-      display: none;
-    }}
+  .mobile-navigation {
+    display: none;
+  }
+  .hamburger {
+    display: none;
+  }
+}
