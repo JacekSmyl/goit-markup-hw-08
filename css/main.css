@@ -124,9 +124,6 @@ input:focus-visible {
   .background-image {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-bg-tablet.jpg");
   }
-  .container {
-    max-width: 768px;
-  }
   .container--footer {
     flex-direction: row;
     flex-wrap: wrap;
@@ -633,7 +630,7 @@ input:focus-visible {
     justify-content: space-evenly;
     padding-left: 0px;
     max-width: 768px;
-    margin: 0px;
+    margin: 0 auto;
   }
   .list-icon__background {
     width: 354px;
@@ -737,6 +734,7 @@ input:focus-visible {
   .team__members {
     flex-direction: row;
     flex-wrap: wrap;
+    min-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1270,6 +1268,8 @@ input:focus-visible {
 
 .portfolio__shadow {
   margin-bottom: 30px;
+  max-width: 370px;
+  max-height: 404px;
 }
 .portfolio__shadow:hover {
   cursor: pointer;
@@ -1287,10 +1287,17 @@ input:focus-visible {
   margin: 0px;
 }
 
+.portfolio__image {
+  max-width: 100%;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .portfolio {
     flex-direction: row;
     padding-bottom: 94px;
+    padding-top: 0;
+    margin: 0 auto;
+    max-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
