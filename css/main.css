@@ -128,6 +128,7 @@ input:focus-visible {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    max-width: 740px;
   }
   .container-footer-form {
     padding-bottom: 60px;
