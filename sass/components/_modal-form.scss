@@ -4,10 +4,7 @@
 
 .modal-form {
   display: flex;
-  flex-direction: column;
-  position: relative;
-  margin-left: 40px;
-  margin-right: 40px;
+flex-direction: column;
 }
 
 .modal-form label:focus-within svg {
@@ -16,66 +13,63 @@
 
 .modal-form__text {
   font-weight: 700;
-  font-size: 20px;
-  line-height: 23px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  margin-top: 40px;
-  margin-bottom: 30px;
-}
-.modal-form__label {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  width: 100%;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.01em;
-  color: #757575;
-  margin-top: 10px;
-  margin-bottom: 4px;
-}
+font-size: 16px;
+line-height: 1.15;
+text-align: center;
+letter-spacing: .03em;
+color: var( --black);
+margin-top: 40px;
+margin-bottom: 30px;}
 
+.modal-form__label {
+font-size: 12px;
+line-height: 1.16;
+letter-spacing: .01em;
+color: var( --text-color);
+padding-left: 40px;
+margin-bottom: 4px;
+margin-top: 10px;
+position: relative;
+}
+.modal-form_icon{
+width: 12px;
+height: 12px;
+fill: #000;
+position: absolute;
+top: 50%;
+left: 60px;
+}
 .modal-form__icon-name {
-  position: absolute;
-  left: 14px;
-  top: 155px;
+width: 12px;
+height: 12px;
 }
 
 .modal-form__icon-phone {
-  position: absolute;
-  left: 14px;
-  top: 220px;
+height: 13px;
+width: 13px;
 }
 
 .modal-form__icon-mail {
-  position: absolute;
-  left: 14px;
-  top: 290px;
+width: 15px;
+height: 12px;
 }
-.modal-form label {
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-  color: #757575;
-  margin-bottom: 4px;
-  margin-top: 10px;
-}
+
 
 //Desktop//
 @media screen and (min-width: 1200px) {
 
   .modal-form__icon-name {
-    position: absolute;
-    left: 14px;
-    top: 130px;
+   width: 12px;
+height: 12px;
   }
 
   .modal-form__icon-phone {
-    top: 200px;
+    height: 13px;
+width: 13px;
   }
 
   .modal-form__icon-mail {
-    top: 265px;
+    width: 15px;
+height: 12px;
   }
 }

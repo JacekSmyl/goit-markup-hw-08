@@ -120,6 +120,10 @@ input:focus-visible {
   padding-top: 60px;
 }
 
+.container-portfolio {
+  padding: 0px 15px;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .background-image {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-bg-tablet.jpg");
@@ -753,7 +757,6 @@ input:focus-visible {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  min-width: 480px;
   max-width: 700px;
 }
 
@@ -852,9 +855,6 @@ input:focus-visible {
 .modal-form {
   display: flex;
   flex-direction: column;
-  position: relative;
-  margin-left: 40px;
-  margin-right: 40px;
 }
 
 .modal-form label:focus-within svg {
@@ -863,87 +863,87 @@ input:focus-visible {
 
 .modal-form__text {
   font-weight: 700;
-  font-size: 20px;
-  line-height: 23px;
+  font-size: 16px;
+  line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
+  color: var(--black);
   margin-top: 40px;
   margin-bottom: 30px;
 }
 
 .modal-form__label {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  width: 100%;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.01em;
-  color: #757575;
-  margin-top: 10px;
-  margin-bottom: 4px;
-}
-
-.modal-form__icon-name {
-  position: absolute;
-  left: 14px;
-  top: 155px;
-}
-
-.modal-form__icon-phone {
-  position: absolute;
-  left: 14px;
-  top: 220px;
-}
-
-.modal-form__icon-mail {
-  position: absolute;
-  left: 14px;
-  top: 290px;
-}
-
-.modal-form label {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
-  color: #757575;
+  color: var(--text-color);
+  padding-left: 40px;
   margin-bottom: 4px;
   margin-top: 10px;
+  position: relative;
+}
+
+.modal-form_icon {
+  width: 12px;
+  height: 12px;
+  fill: #000;
+  position: absolute;
+  top: 50%;
+  left: 60px;
+}
+
+.modal-form__icon-name {
+  width: 12px;
+  height: 12px;
+}
+
+.modal-form__icon-phone {
+  height: 13px;
+  width: 13px;
+}
+
+.modal-form__icon-mail {
+  width: 15px;
+  height: 12px;
 }
 
 @media screen and (min-width: 1200px) {
   .modal-form__icon-name {
-    position: absolute;
-    left: 14px;
-    top: 130px;
+    width: 12px;
+    height: 12px;
   }
   .modal-form__icon-phone {
-    top: 200px;
+    height: 13px;
+    width: 13px;
   }
   .modal-form__icon-mail {
-    top: 265px;
+    width: 15px;
+    height: 12px;
   }
 }
 /*Modal*/
 .modal {
   position: absolute;
-  top: 50%;
+  top: 65%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  width: 450px;
-  min-height: 609px;
+  transform: translate(-50%, -50%) scale(1.25);
+  width: 70%;
+  height: 609px;
   background-color: #fff;
   padding-bottom: 40px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
 }
 
 .modal__textarea {
+  display: block;
   resize: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  width: 370px;
-  height: 120px;
   padding: 12px 16px;
   color: rgba(117, 117, 117, 0.5);
+  width: 80%;
+  height: 120px;
 }
 .modal__textarea:hover {
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -959,9 +959,10 @@ input:focus-visible {
 .modal__input {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  width: 370px;
+  width: 80%;
   height: 40px;
   padding-left: 42px;
+  display: block;
 }
 
 .modal__button {
@@ -991,16 +992,17 @@ input:focus-visible {
 
 .checkbox-container {
   display: flex;
-  justify-content: center;
   margin-top: 0;
+  padding-left: 40px;
+  padding-right: 40px;
+  color: var(--text-color);
+  padding-top: 20px;
 }
 
 .checkbox-container__checked {
   position: absolute;
-  left: 7px;
-  top: 81.5%;
-  width: 26px;
-  height: 16px;
+  width: 30px;
+  height: 20px;
   opacity: 0;
 }
 
@@ -1070,11 +1072,6 @@ input:focus-visible {
   }
   .modal__textarea {
     width: 448px;
-  }
-  .checkbox-container__checked {
-    top: 81%;
-    left: 10%;
-    width: 27px;
   }
 }
 .footer {
@@ -1152,7 +1149,7 @@ input:focus-visible {
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  width: 358px;
+  max-width: 358px;
   height: 50px;
   background-color: transparent;
   color: rgba(255, 255, 255, 0.6);
@@ -1343,8 +1340,6 @@ input:focus-visible {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
-  width: 322px;
-  height: 36px;
   color: var(--text-black);
   padding-left: 24px;
   margin: 0px;
@@ -1354,8 +1349,6 @@ input:focus-visible {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.625;
-  width: 322px;
-  height: 30px;
   color: #757575;
   padding-left: 24px;
   margin: 0px;
