@@ -51,10 +51,9 @@ padding: 0px 15px;
 .container {
   padding: 0px;
 
-
+}
   .container--footer {
     flex-direction: row;
-
     flex-wrap: wrap;
     justify-content: space-around;
     max-width: 740px;
@@ -86,32 +85,8 @@ padding: 0px 15px;
     max-width: 1200px;
   padding: 0 15px;
 }
-  
-
-  .background-image {
-    max-width: 1600px;
-  }
-
-  .header {
-    display: flex;
-    list-style: none;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 100%;
-      padding: 0 15px;
-}
-  
-
-}
-  
-
-//Desktop//
-
-@media screen and (min-width: 1200px) {
-.container--footer{
+  .container--footer{
   text-align: start;
-}
-  .container--footer {
     flex-direction: row;
     text-align:center;
   }
@@ -129,7 +104,22 @@ padding: 0px 15px;
     margin-left: 70px;
   }
 
-}
+
+  .background-image {
+    max-width: 1600px;
+  }
+
+  .header {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+      padding: 0 15px;
+}}
+  
+
+
   //Retina//
   @media screen and (-webkit-min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
@@ -153,4 +143,4 @@ padding: 0px 15px;
         ),
         url(../images/hero/hero-bg-tablet@2x.jpg);
     }
-    }}
+    }
