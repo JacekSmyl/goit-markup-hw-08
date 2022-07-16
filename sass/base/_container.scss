@@ -3,6 +3,7 @@
 .container {
   width: 100%;
   margin: 0 auto;
+  padding: 0 15px;
 }
 .header {
   border-bottom: 1px solid #ececec;
@@ -23,6 +24,7 @@
   display: flex;
   flex-direction: column;
   text-align: center;
+  padding: 0 15px;
 }
 .container-footer {
   margin-top: 60px;
@@ -30,7 +32,7 @@
 
 .container-footer-form {
   padding-bottom: 60px;
-  margin: 0 auto;
+
   padding-top: 60px;
 }
 .container-portfolio{
@@ -58,6 +60,7 @@ padding: 0px 15px;
 
   .container-footer-form {
     padding-bottom: 60px;
+   
   }
 
   .header {
@@ -103,6 +106,7 @@ padding: 0px 15px;
 
   .container-footer-form {
     padding-left: 78px;
+     padding-top: 0px;
   }
 
   .container-footer--item {

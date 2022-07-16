@@ -21,7 +21,10 @@
   flex-direction: column;
   z-index: 1002;
 }
-
+.hamburger-list-container{
+  padding-left: 40px;
+  padding-top: 100px;
+}
 // JS//
 
 .js-menu-container.is-open {

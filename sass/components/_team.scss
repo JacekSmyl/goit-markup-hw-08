@@ -8,6 +8,8 @@
   padding-top: 0;
   padding-bottom: 94px;
   margin: auto;
+  padding: 0 15px 94px 15px;
+
 }
 
 .team__members {
@@ -50,6 +52,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     min-width: 768px;
+    justify-content: space-around;
   }
 }
 
