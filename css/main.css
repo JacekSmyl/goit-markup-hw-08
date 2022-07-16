@@ -56,6 +56,10 @@
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+main {
+  overflow: hidden;
+}
+
 body {
   font-family: "Roboto", "Raleway", sans-serif;
   margin: 0px;
@@ -80,6 +84,7 @@ ul {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.6;
+  padding: 0 15px;
 }
 
 .section-heading--team {
@@ -87,7 +92,6 @@ ul {
 }
 
 .container {
-  width: 100%;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -129,28 +133,32 @@ ul {
   .background-image {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-bg-tablet.jpg");
   }
-  .container--footer {
+  .container {
+    padding: 0px;
+  }
+  .container .container--footer {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     max-width: 740px;
   }
-  .container-footer-form {
+  .container .container-footer-form {
     padding-bottom: 60px;
   }
-  .header {
+  .container .header {
     display: flex;
     list-style: none;
     justify-content: space-between;
     align-items: center;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) and (min-width: 1200px) {
   .background-image {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/overlay.jpg");
   }
   .container {
     max-width: 1200px;
+    padding: 0 15px;
   }
   .background-image {
     max-width: 1600px;
@@ -160,10 +168,17 @@ ul {
     list-style: none;
     justify-content: space-between;
     align-items: center;
+    max-width: 100%;
+    padding: 0 15px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) and (min-width: 1200px) {
+  .container--footer {
+    text-align: start;
   }
   .container--footer {
     flex-direction: row;
-    text-align: start;
+    text-align: center;
   }
   .container-footer {
     padding-bottom: 60px;
@@ -176,12 +191,12 @@ ul {
     margin-left: 70px;
   }
 }
-@media screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
   .background-image {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-bg-mobile-2x.jpg);
   }
 }
-@media screen and (min-width: 1200px) and (min-width: 768px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (max-width: 1199px) and (min-width: 768px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199px) and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
   .background-image {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-bg-tablet@2x.jpg);
   }
@@ -253,6 +268,7 @@ ul {
   align-items: center;
   justify-content: space-between;
   height: 60px;
+  width: 100%;
 }
 
 .header__container--flex {
@@ -566,7 +582,6 @@ ul {
 .hero {
   color: #ffffff;
   text-align: center;
-  padding-bottom: px;
 }
 
 .hero__button {
@@ -653,6 +668,8 @@ ul {
   }
   .list-icon--box {
     box-sizing: border-box;
+    margin-left: 0px;
+    margin-right: 0px;
   }
   .list-icon__text {
     width: 354px;
@@ -750,7 +767,6 @@ ul {
   .team__members {
     flex-direction: row;
     flex-wrap: wrap;
-    min-width: 768px;
     justify-content: space-around;
   }
 }
@@ -817,7 +833,7 @@ ul {
 @media screen and (min-width: 1200px) {
   .customers {
     justify-content: space-between;
-    min-width: 1200px;
+    max-width: 1200px;
   }
   .customers__list {
     width: 170px;
@@ -1094,6 +1110,7 @@ ul {
 .footer {
   background: var(--black);
   display: flex;
+  padding: 0 15px;
 }
 
 .footer__decoration {
@@ -1160,6 +1177,7 @@ ul {
   display: flex;
   flex-direction: column;
   max-width: 460px;
+  margin: 0 auto;
 }
 
 .footer-form_input {
