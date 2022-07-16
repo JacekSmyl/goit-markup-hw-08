@@ -47,6 +47,11 @@
   padding-left: 42px;
   display: block;
 }
+.modal__input:hover,
+.modal__input:focus-visible {
+  outline: none;
+  border: 1px solid rgba(33, 150, 243, 1);
+}
 
 .modal__button {
   display: flex;

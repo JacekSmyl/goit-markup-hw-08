@@ -70,12 +70,6 @@ ul {
   list-style-type: none;
 }
 
-input:hover,
-input:focus-visible {
-  outline: none;
-  border: 1px solid rgb(33, 150, 243);
-}
-
 .section {
   margin-bottom: 94px;
 }
@@ -982,6 +976,12 @@ input:focus-visible {
   display: block;
 }
 
+.modal__input:hover,
+.modal__input:focus-visible {
+  outline: none;
+  border: 1px solid rgb(33, 150, 243);
+}
+
 .modal__button {
   display: flex;
   justify-content: center;
@@ -1159,6 +1159,7 @@ input:focus-visible {
 .footer-form {
   display: flex;
   flex-direction: column;
+  max-width: 460px;
 }
 
 .footer-form_input {
